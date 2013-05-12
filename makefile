@@ -18,6 +18,6 @@ dist:
 	git archive --format=tar --prefix=$(NAME)-$(VERSION)/ HEAD | gzip -9 > $(NAME)-$(VERSION).tar.gz
 
 install:
-	install -Dm644 $(GZ) $(DESTDIR)/usr/share/fonts/misc/$(GZ)
+	install -Dm644 $(GZ) $(DESTDIR)/usr/share/fonts/local/$(GZ)
 
 .PHONY: clean dist install
